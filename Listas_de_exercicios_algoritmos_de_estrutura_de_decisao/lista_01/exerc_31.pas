@@ -15,7 +15,7 @@ Café expresso R$ 1,52
 Capuccino R$ 2,17
 Mocaccino R$ 2,36}
 
-program exerc_01;
+program exerc_31;
 uses crt;
 
   const
