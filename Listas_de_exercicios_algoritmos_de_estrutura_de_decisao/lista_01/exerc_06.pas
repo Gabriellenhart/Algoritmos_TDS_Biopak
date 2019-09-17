@@ -15,10 +15,23 @@ uses crt;
   var
     peso, remessa :real;
   begin
-    writeln('Informe o peso da encomenda: ')
+    writeln('Informe o peso da encomenda: ');
     read(peso);
-    if peso = 500 then
+    if peso <= 500 then
       begin
         writeln('Valor da remessa eh R$ 1,10');
       end;
-  end.
+      if (peso > 500) and (peso < 2000) then
+        begin
+          writeln('Valor da remessa eh R$ 2,20');
+        end;
+        if (peso >= 2000) and (peso < 10000) then
+          begin
+            writeln('Valor da remessa eh R$ 3,70');
+          end;
+          if peso >= 10000 then
+            begin
+              writeln('O valor da remessa eh R$ 5,00 mais a taxa de R$ 3,80/kg', peso+peso*3.80:0:2);
+            end;
+  readkey
+end.
